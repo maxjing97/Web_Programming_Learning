@@ -1,6 +1,7 @@
 //import the basic react 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./in"//import the css
 
 //get element
 const testElement = document.getElementById('app');
