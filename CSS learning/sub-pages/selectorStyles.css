@@ -1,0 +1,60 @@
+* { /*override default stylesheet values*/ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* default sizing model is the content-box, in which the border width is included in the content width. In a border-box, the border width is not included and grows inside rather than outside.*/
+  }
+
+@font-face {         /*fonts imported*/ 
+    font-family: 'Futura';
+    src: url(fonts/Futura_regular);
+} 
+
+
+body {
+    background-color: burlywood;
+    font-family: 'Futura', Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 35pt;
+    font-family: 'Futura', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+    text-align: center;
+
+    position: relative;
+    bottom: 70px;
+}
+
+.selectors_main a {
+    display: inline-block; /*this allows the span element to be styled as a block*/ 
+    box-sizing: content-box; /*this element is changed to content box so that the border does not grow in*/
+    height: 100px;
+    width: 100px;
+    
+    background-color: rgb(51, 211, 158);
+    color: azure;
+    font-size: 12pt;
+    font-weight: 600;
+    text-decoration: none;
+
+    text-align: center;
+    vertical-align: bottom;
+
+    border: 0px 0px 3px 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+/*selector for the button's background infomation*/
+.selectors_main a img{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background-color: aquamarine;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

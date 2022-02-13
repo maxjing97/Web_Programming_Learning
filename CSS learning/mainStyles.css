@@ -1,0 +1,79 @@
+* { /*override default stylesheet values*/ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* default sizing model is the content-box, in which the border width is included in the content width. In a border-box, the border width is not included and grows inside rather than outside.*/
+  }
+
+@font-face {         /*fonts imported*/ 
+    font-family: 'Futura';
+    src: url(fonts/Futura_regular.otf);
+} 
+
+
+body {
+    background-color: burlywood;
+}
+
+
+h1 {
+    font-size: 40pt;
+    font-family: 'Futura', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+    background-color: burlywood;
+    text-align: center;
+}
+
+p {
+    background-color: rgb(174, 231, 88);
+    color: purple;
+    font-family: "Futura",Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20pt;
+    padding: 20px;
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+    /*borderstyles*/border-color: white;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+}
+
+/*selects a nav section to be a flexbox*/
+.row-container  {
+    /*The first lines before the newline are flexbox properties*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+
+    margin: 0px 50px 0px 50px;
+    background-color: black;
+}
+
+.row-container p {
+    flex-grow: 1; /*flex-grow specifies how empty space is taken up.Since this selector makes all elements of the box have flex-grow of 1,theemptyspaceisdistributedevenly*/
+    
+    /*borderstyles*/
+    border-color: white;
+    border-style: solid;
+    border-width: 1px 5px 2px 5px;
+
+    margin: 0px;
+    background-color: black;
+    font-family: "Futura", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* text of the menu anchor*/
+.row-container p a{
+    color: rgb(230, 225, 225);    
+    font-size: 16pt;
+    text-decoration: none; /*removes default underline from the anchor tag*/
+}
+
+/* text of the menu anchor when a cursor is hovered*/
+.row-container p a:hover{
+    color: rgb(230, 225, 225);
+    text-decoration: underline;
+    text-decoration-color: aqua; -moz-text-decoration-color: aqua;
+}

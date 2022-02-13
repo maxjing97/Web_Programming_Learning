@@ -1,0 +1,24 @@
+{
+  "name": "web_programming_learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxjing97/Web_Programming_Learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxjing97/Web_Programming_Learning/issues"
+  },
+  "homepage": "https://github.com/maxjing97/Web_Programming_Learning#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "mocha": "^9.2.0",
+    "react": "^17.0.2"
+  }
+}
